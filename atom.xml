@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-06-10T11:30:28.129Z</updated>
+    <updated>2020-06-10T12:13:52.377Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -11,12 +11,18 @@
     <icon>https://ump90.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UMP-90&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[test]]></title>
-        <id>https://ump90.github.io/post/test/</id>
-        <link href="https://ump90.github.io/post/test/">
+        <title type="html"><![CDATA[Win7 解决KB4556399无法安装的问题]]></title>
+        <id>https://ump90.github.io/post/windows7-jie-jue-kb4556399-wu-fa-an-zhuang-de-wen-ti/</id>
+        <link href="https://ump90.github.io/post/windows7-jie-jue-kb4556399-wu-fa-an-zhuang-de-wen-ti/">
         </link>
-        <updated>2020-06-10T11:24:15.000Z</updated>
-        <content type="html"><![CDATA[<p>test</p>
+        <updated>2020-06-10T11:36:39.000Z</updated>
+        <content type="html"><![CDATA[<p>虽然微软已经停止了对Win7的支持，但是用BypassESU补丁还能继续用上三年。最近手动打补丁的时候发现五月份的补丁KB4552921打不上。求教了万能的Google，最终在Mydigitallife论坛找到了解决方案 （https://forums.mydigitallife.net/threads/bypass-windows-7-extended-security-updates-eligibility.80606/page-150）</p>
+<p>补丁会去检查msi文件的ESU_LOCK属性，并将其与确定进一步操作路径的几个值进行比较。把ESU_LOCK的值改成&quot;2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;就能直接绕过验证。 ndp48-kb4552921安装程序还能使用msioptions参数。</p>
+<p>所以这就是最后的解决方案，下载KB4552921（其实就是KB4556399）使用命令行手动安装补丁<br>
+for x86:<br>
+ndp48-kb4552921-x86_608b67e4011b9e103ca18deadbfc013d1c328508.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
+<p>for x64:<br>
+ndp48-kb4552921-x64_6912af0422fc16a14f4f398fda98117f1e2f01b8.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
 ]]></content>
     </entry>
 </feed>

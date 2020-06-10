@@ -3,7 +3,7 @@
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>关于 | UMP-90&#39;s blog</title>
+<title>Win7 解决KB4556399无法安装的问题 | UMP-90&#39;s blog</title>
 <link rel="shortcut icon" href="https://ump90.github.io/favicon.ico?v=1591791226485">
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ump90.github.io/styles/main.css">
@@ -87,7 +87,7 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    关于
+                    Win7 解决KB4556399无法安装的问题
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
@@ -96,17 +96,13 @@
                     
                 </div>
                 <div class="post-content">
-                    <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>写着玩的blog，什么乱七八糟的东西都有。</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>UMP-90</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>以前喜欢技术，现在喜欢平静的生活。</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>ump90@protonmail.com</p>
+                    <p>虽然微软已经停止了对Win7的支持，但是用BypassESU补丁还能继续用上三年。最近手动打补丁的时候发现五月份的补丁KB4552921打不上。求教了万能的Google，最终在Mydigitallife论坛找到了解决方案 （https://forums.mydigitallife.net/threads/bypass-windows-7-extended-security-updates-eligibility.80606/page-150）</p>
+<p>补丁会去检查msi文件的ESU_LOCK属性，并将其与确定进一步操作路径的几个值进行比较。把ESU_LOCK的值改成&quot;2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;就能直接绕过验证。 ndp48-kb4552921安装程序还能使用msioptions参数。</p>
+<p>所以这就是最后的解决方案，下载KB4552921（其实就是KB4556399）使用命令行手动安装补丁<br>
+for x86:<br>
+ndp48-kb4552921-x86_608b67e4011b9e103ca18deadbfc013d1c328508.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
+<p>for x64:<br>
+ndp48-kb4552921-x64_6912af0422fc16a14f4f398fda98117f1e2f01b8.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
 
                 </div>
             </article>
