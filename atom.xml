@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-06-10T12:16:21.253Z</updated>
+    <updated>2020-07-03T08:10:11.866Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://ump90.github.io/images/avatar.png</logo>
     <icon>https://ump90.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UMP-90&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[白嫖API]]></title>
+        <id>https://ump90.github.io/post/bai-piao-api/</id>
+        <link href="https://ump90.github.io/post/bai-piao-api/">
+        </link>
+        <updated>2020-07-03T08:04:23.000Z</updated>
+        <content type="html"><![CDATA[<p>Api接口是付费的怎么办？<br>
+去github找找就有了<br>
+<img src="https://ump90.github.io/post-images/1593763735147.png" alt="" loading="lazy"><br>
+<img src="https://ump90.github.io/post-images/1593763625194.png" alt="" loading="lazy"><br>
+(≧▽≦)/(≧▽≦)/(≧▽≦)/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Win7 解决KB4556399无法安装的问题]]></title>
         <id>https://ump90.github.io/post/windows7-jie-jue-kb4556399-wu-fa-an-zhuang-de-wen-ti/</id>
