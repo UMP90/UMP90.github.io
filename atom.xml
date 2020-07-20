@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-07-20T07:31:27.515Z</updated>
+    <updated>2020-07-20T13:49:08.529Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -56,6 +56,9 @@ for x86:<br>
 ndp48-kb4552921-x86_608b67e4011b9e103ca18deadbfc013d1c328508.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
 <p>for x64:<br>
 ndp48-kb4552921-x64_6912af0422fc16a14f4f398fda98117f1e2f01b8.exe /msioptions &quot;ESU_LOCK=2D40812E-974C-4EA2-8DCC-63C992D505B9&quot;</p>
+<p>2020.7.20更新<br>
+新版BypassESU 已解决.net补丁无法更新的问题。<br>
+<img src="https://ump90.github.io/post-images/1595252940306.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
