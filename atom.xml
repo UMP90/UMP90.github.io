@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-07-03T08:10:11.866Z</updated>
+    <updated>2020-07-20T07:31:27.515Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://ump90.github.io/images/avatar.png</logo>
     <icon>https://ump90.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UMP-90&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[CyberSploit2靶机]]></title>
+        <id>https://ump90.github.io/post/cybersploit2-ba-ji/</id>
+        <link href="https://ump90.github.io/post/cybersploit2-ba-ji/">
+        </link>
+        <updated>2020-07-20T07:25:56.000Z</updated>
+        <content type="html"><![CDATA[<p>先扫一下端口。<br>
+<img src="https://ump90.github.io/post-images/1595230103539.png" alt="" loading="lazy"><br>
+就开了SSH和一个HTTP，打开网页看看，这个table标题还错位了，看起来要拿这些信息来爆破SSH。用hydra没有爆破成功。将Password和Handle组合起来也没有爆破成功。<br>
+<img src="https://ump90.github.io/post-images/1595230131279.png" alt="" loading="lazy"><br>
+注意到第四行的信息不太正常，重新查看网页源码，注意到126行有句注释。<br>
+<img src="https://ump90.github.io/post-images/1595230150561.png" alt="" loading="lazy"></p>
+<p>使用ROT47解密，得到用户名和密码成功登陆<br>
+<img src="https://ump90.github.io/post-images/1595230174220.png" alt="" loading="lazy"><br>
+在用户目录下发现提示，使用docker提权<br>
+<img src="https://ump90.github.io/post-images/1595230196374.png" alt="" loading="lazy"><br>
+拿下root权限<br>
+<img src="https://ump90.github.io/post-images/1595230228053.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[白嫖API]]></title>
         <id>https://ump90.github.io/post/bai-piao-api/</id>
