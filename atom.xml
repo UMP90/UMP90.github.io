@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-07-26T12:41:15.659Z</updated>
+    <updated>2020-08-02T07:21:43.482Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -26,16 +26,6 @@
 <img src="https://ump90.github.io/post-images/1595731001702.png" alt="" loading="lazy"><br>
 <img src="https://ump90.github.io/post-images/1595731011676.png" alt="" loading="lazy"><br>
 /root目录已经可读，flag到手。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[明御综合日志审计平台 apmAgent]]></title>
-        <id>https://ump90.github.io/post/3WOupw2gJ/</id>
-        <link href="https://ump90.github.io/post/3WOupw2gJ/">
-        </link>
-        <updated>2020-07-24T04:43:53.000Z</updated>
-        <content type="html"><![CDATA[<p>实战的时候注意到的，root密码有可能直接明文保存在/opt/auto_update_tools/etc/iplist.txt<br>
-我也不知道该说些什么</p>
 ]]></content>
     </entry>
     <entry>
