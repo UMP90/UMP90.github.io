@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ump90.github.io</id>
     <title>UMP-90&apos;s blog</title>
-    <updated>2020-08-02T07:21:43.482Z</updated>
+    <updated>2020-09-16T14:11:15.803Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ump90.github.io"/>
     <link rel="self" href="https://ump90.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://ump90.github.io/images/avatar.png</logo>
     <icon>https://ump90.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UMP-90&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Nessus破解]]></title>
+        <id>https://ump90.github.io/post/DeMxPZoTS/</id>
+        <link href="https://ump90.github.io/post/DeMxPZoTS/">
+        </link>
+        <updated>2020-09-16T14:01:54.000Z</updated>
+        <content type="html"><![CDATA[<p>简单的记一下最新版的nessus破解。<br>
+用目前网上流传的方法在更新插件包时会出问题，应该是在更新时加了检测。但是试用版更新是不会有问题的。所以先要在激活成试用版的时候更新插件。更新完了再去根据插件时间修改plugin_feed_info.inc。plugin目录下的plugin_feed_info.inc要删掉。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[(SW5mb1NlYyBQcmVwOiBPU0NQIA==) write up]]></title>
         <id>https://ump90.github.io/post/dwL8lLri-/</id>
